@@ -13,6 +13,16 @@ cask "dads-watching-this" do
 
   app "DadsWatchingThis.app"
 
+  caveats <<~EOS
+    이 앱은 Apple 공증을 받지 않았습니다. 열기 전에 격리 표시를 떼세요:
+
+      xattr -dr com.apple.quarantine /Applications/DadsWatchingThis.app
+
+    먼저 열면 macOS 가 앱을 지우라고 권합니다. 그때는 다시 설치하세요:
+
+      brew reinstall --cask dads-watching-this
+  EOS
+
   zap trash: [
     "~/Library/Preferences/com.sanghun.DadsWatchingThis.plist",
   ]
