@@ -1,6 +1,6 @@
 cask "dads-watching-this" do
-  version "0.1.2"
-  sha256 "0171c0ce020129c5845c319b6cb9369817432cafac3b5e0f7807220d99511ff3"
+  version "0.1.3"
+  sha256 "e6cba4a18d14391fbcd305f755f231f80443cc01ded84f02facc5063f9aabb9d"
 
   url "https://github.com/badeagle85/dads-watching-this/releases/download/v#{version}/DadsWatchingThis-#{version}.zip"
   name "아빠안잔다"
@@ -10,6 +10,8 @@ cask "dads-watching-this" do
 
   depends_on macos: :sonoma
   depends_on arch: :arm64
+
+  auto_updates true
 
   app "DadsWatchingThis.app"
 
@@ -21,6 +23,8 @@ cask "dads-watching-this" do
     먼저 열면 macOS 가 앱을 지우라고 권합니다. 그때는 다시 설치하세요:
 
       brew reinstall --cask dads-watching-this
+
+    0.1.3 부터는 앱이 스스로 갱신합니다. 이 명령은 처음 한 번만 필요합니다.
   EOS
 
   zap trash: [
