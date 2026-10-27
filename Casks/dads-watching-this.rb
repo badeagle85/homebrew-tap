@@ -1,6 +1,6 @@
 cask "dads-watching-this" do
-  version "0.1.6"
-  sha256 "a46b365d4b1f862a4a00e5a80dad48e2024040289443faab4462c71d33d18f6f"
+  version "0.1.7"
+  sha256 "6d14841da14f8c41b801fc8e738ff8e8e432c4fd0e4ed66f12c32c1bf627b77f"
 
   url "https://github.com/badeagle85/dads-watching-this/releases/download/v#{version}/DadsWatchingThis-#{version}.zip"
   name "아빠안잔다"
